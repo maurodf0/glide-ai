@@ -14,7 +14,7 @@
 
 <template>
     <div>
-       <h1> {{ settings?.data.site_title }} </h1>
+        <AppHeader :settings="settings" />
         <slot />
     </div>
 </template>
