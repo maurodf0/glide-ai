@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Glade AI',
+      title: 'Glide AI',
       htmlAttrs: {
         lang: 'it',
       },
