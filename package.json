@@ -17,6 +17,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.7.5",
     "@nuxtjs/prismic": "^4.1.0",
+    "@nuxtjs/tailwindcss": "^6.13.1",
     "@slicemachine/adapter-nuxt": "^0.3.68",
     "concurrently": "^9.1.2",
     "eslint": "^9.18.0",
