@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Prismic + Nuxt Minimal Starter',
       htmlAttrs: {
-        lang: 'en',
+        lang: 'it',
       },
       meta: [
         { charset: 'utf-8' },
