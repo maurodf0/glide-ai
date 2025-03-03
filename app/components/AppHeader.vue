@@ -7,8 +7,8 @@ import type { Content } from '@prismicio/client'
 
 
 <template>
-    <header class="p-4 md:p-6 flex items-center justify-between">
-        <nav aria-label="Main" class="flex justify-between items-center w-10/12">
+    <header class="p-4 md:p-6">
+        <nav aria-label="Main" class="flex justify-between items-center ">
             <NuxtLink to="/" class="flex items-center">
                 <GlideLogo />
             </NuxtLink>
