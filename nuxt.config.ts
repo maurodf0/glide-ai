@@ -24,6 +24,8 @@ export default defineNuxtConfig({
     }
   },
 
+  css: ['@/assets/css/main.css'],
+
   modules: ['@nuxt/eslint', '@nuxtjs/prismic', '@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
   prismic: {

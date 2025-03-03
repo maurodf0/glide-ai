@@ -1,0 +1,5 @@
+/* with Nuxt fonts don't need to load font files */
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
