@@ -14,7 +14,7 @@
 
 <template>
     <div>
-        {{ settings }}
+       <h1> {{ settings?.data.site_title }} </h1>
         <slot />
     </div>
 </template>
