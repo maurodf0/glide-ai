@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
     import type { Content } from '@prismicio/client'
     defineProps<{
         settings?: Content.SettingsDocument
