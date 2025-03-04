@@ -12,7 +12,7 @@ import type { Content } from '@prismicio/client'
 
 <template>
     <header class="p-4 md:p-6">
-        <nav aria-label="Main" class="flex justify-between items-center ">
+        <nav aria-label="Main" class="flex flex-col mx-auto max-w-6xl justify-between py-2 md:flex-row md:items-center md:justify-start">
             <div class="flex items-center justify-between">
                 <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
                     <GlideLogo />
