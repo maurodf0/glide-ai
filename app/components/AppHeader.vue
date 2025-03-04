@@ -17,7 +17,9 @@ import type { Content } from '@prismicio/client'
                 <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
                     <GlideLogo />
                 </NuxtLink>
-                <button class="block md:hidden p-2 text-3xl" :aria-expanded="isOpen" @click="isOpen = true">Open</button>
+                <button class="block md:hidden p-2 text-3xl" :aria-expanded="isOpen" @click="isOpen = true">
+                    <Icon name="ph:list-bold" />
+                </button>
             </div>
 
             <div
@@ -25,7 +27,9 @@ import type { Content } from '@prismicio/client'
             :class="isOpen ? 'translate-x-0' : 'translate-x-full'" >
                 <button 
                     @click="isOpen = false"
-                    class="block p-2 text-3xl">Close</button>
+                    class="block p-2 text-3xl">
+                   <Icon name="ph:x-bold"/>
+                </button>
 
                   <ul class="grid justify-items-end gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
