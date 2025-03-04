@@ -16,6 +16,7 @@
     <div>
         <AppHeader :settings="settings" />
         <slot />
+        <AppFooter />
     </div>
 </template>
 
