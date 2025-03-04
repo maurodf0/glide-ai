@@ -17,12 +17,16 @@ import type { Content } from '@prismicio/client'
                 <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
                     <GlideLogo />
                 </NuxtLink>
-                <button @click="isOpen = true">Open</button>
+                <button class="block md:hidden p-2 text-3xl" :aria-expanded="isOpen" @click="isOpen = true">Open</button>
             </div>
 
             <div
             class="md:hidden fixed inset-0 z-40 flex flex-col items-end bg-gray-950 pr-4 pt-6 transition-transform duration-300 ease-in-out will-change-transform"
             :class="isOpen ? 'translate-x-0' : 'translate-x-full'" >
+                <button 
+                    @click="isOpen = false"
+                    class="block p-2 text-3xl">Close</button>
+
                   <ul class="grid justify-items-end gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
                         <PrismicLink :field="link" :class="link.variant" />
