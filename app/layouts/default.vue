@@ -16,7 +16,7 @@
     <div>
         <AppHeader :settings="settings" />
         <slot />
-        <AppFooter />
+        <AppFooter :settings="settings" />
     </div>
 </template>
 
