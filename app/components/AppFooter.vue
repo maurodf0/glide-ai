@@ -1,5 +1,8 @@
 <script lang="ts">
-
+    import type { Content } from '@prismicio/client'
+    defineProps<{
+        settings?: Content.SettingsDocument
+    }>()
 </script>
 
 <template>
@@ -9,7 +12,7 @@
                     <GlideLogo />
                 </NuxtLink>
 
-                <ul class="hidden md:flex items-center gap-6">
+                <ul class="flex flex-col items-center gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
                         <PrismicLink 
                             :field="link" 
