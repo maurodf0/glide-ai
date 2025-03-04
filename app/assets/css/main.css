@@ -8,3 +8,8 @@ body {
   background-image: url("/assets/noise-texture.svg");
   @apply bg-gray-950 bg-repeat text-gray-50;
 }
+
+.buttonLink {
+  @apply inline-flex relative h-fit w-fit rounded-full px-4 py-2;
+  @apply border border-sky-100/20 bg-sky-200/10 text-sky-200 outline-none ring-teal-300;
+}

@@ -33,14 +33,20 @@ import type { Content } from '@prismicio/client'
 
                   <ul class="grid justify-items-end gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
-                        <PrismicLink :field="link" :class="link.variant" />
+                        <PrismicLink 
+                            :field="link" 
+                            :class="{ buttonLink: link.variant === 'Button' }"
+                            class="block min-h-11 px-3 text-3xl first:mt-8 "/>
                     </li>
                 </ul>
             </div>
 
             <ul class="hidden md:flex items-center gap-6">
                 <li v-for="link in settings?.data.navigation" :key="link.key">
-                    <PrismicLink :field="link" :class="link.variant" />
+                    <PrismicLink 
+                        :field="link" 
+                        :class="{ buttonLink: link.variant === 'Button' }"
+                        class="inline-flex min-h-11 items-center "/>
                 </li>
             </ul>
         </nav>
