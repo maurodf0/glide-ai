@@ -4,7 +4,7 @@ import { components } from "~/slices";
 </script>
 
 <template>
-  <SliceSimulator v-slot="{ slices }">
+  <SliceSimulator v-slot="{ slices }" style="background-color: black;">
     <SliceZone
       :slices="slices"
       :components="components"
