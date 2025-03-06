@@ -16,6 +16,7 @@ import type { Content } from '@prismicio/client'
             <div class="flex items-center justify-between">
                 <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
                     <GlideLogo />
+                    <span class="sr-only">{{ settings?.data.site_title }}</span>
                 </NuxtLink>
                 <button class="block md:hidden p-2 text-3xl" :aria-expanded="isOpen" @click="isOpen = true">
                     <Icon name="ph:list-bold" />
