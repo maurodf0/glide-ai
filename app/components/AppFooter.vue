@@ -7,16 +7,16 @@
 
 <template>
     <footer>
-        <nav aria-label="Footer">
-             <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
+        <nav aria-label="Footer" class="flex flex-col justify-between items-center gap-6 px-8 py-7 md:flex-row border-t border-gray-600">
+             <NuxtLink to="/" class="flex items-center z-50">
                     <GlideLogo />
+                    <span class="sr-only">{{ settings?.data.site_title }}</span>
                 </NuxtLink>
 
                 <ul class="md:flex  gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
                         <PrismicLink 
                             :field="link" 
-                            :class="{ buttonLink: link.variant === 'Button' }"
                             class="inline-flex min-h-11 items-center "/>
                     </li>
                 </ul>
