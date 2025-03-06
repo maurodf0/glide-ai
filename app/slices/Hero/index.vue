@@ -19,7 +19,7 @@ defineProps(
     :data-slice-variation="slice.variation"
   >
     
-  <h1>{{ slice.primary.heading.text }}</h1>
+  <h1 class="text-3xl text-center text-slate-600">{{ slice.primary.heading[0].text }}</h1>
 
   <pre>{{ slice }}</pre>
   </section>
