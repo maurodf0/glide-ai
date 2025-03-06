@@ -18,6 +18,9 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-  {{ slice }}
+    
+  <h1>{{ slice.primary.heading.text }}</h1>
+
+  <pre>{{ slice }}</pre>
   </section>
 </template>
