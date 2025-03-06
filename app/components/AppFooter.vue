@@ -7,12 +7,12 @@
 
 <template>
     <footer>
-        <nav aria-label="Main">
+        <nav aria-label="Footer">
              <NuxtLink to="/" class="flex items-center z-50" @click="isOpen = false">
                     <GlideLogo />
                 </NuxtLink>
 
-                <ul class="flex flex-col items-center gap-6">
+                <ul class="md:flex  gap-6">
                     <li v-for="link in settings?.data.navigation" :key="link.key">
                         <PrismicLink 
                             :field="link" 
