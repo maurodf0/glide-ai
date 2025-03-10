@@ -18,7 +18,7 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-<div class="!text-center relative">
+<div class="text-center relative">
     <PrismicText 
       :field="slice.primary.heading"
       class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
@@ -27,7 +27,7 @@ defineProps(
     <PrismicText 
       :field="slice.primary.body"
       wrapper="p"
-      class="max-auto mt-6 max-w-md text-balance text-gray-300" />
+      class="text-center max-auto mt-6 max-w-md text-balance text-gray-300" />
     <template v-for="link in slice.primary.ctas" :key="link.key">
       <PrismicLink :field="link" />
     </template>
