@@ -21,7 +21,8 @@ defineProps(
     
  <PrismicRichText 
   :field="slice.primary.heading"
-  wrapper="h1" />
+  wrapper="h1"
+  class="mx-auto max-w-3xl text-balance text-5xl font-medium" />
 
  <PrismicRichText :field="slice.primary.body" />
  <template v-for="link in slice.primary.ctas" :key="link.key">
