@@ -18,7 +18,7 @@
             "label": "heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "heading1"
+            "single": "heading1"
           }
         },
         "body": {
