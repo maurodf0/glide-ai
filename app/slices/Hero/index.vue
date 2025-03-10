@@ -19,9 +19,10 @@ defineProps(
     :data-slice-variation="slice.variation"
   >
     
- <PrismicRichText 
+ <PrismicText 
   :field="slice.primary.heading"
-  class="mx-auto max-w-3xl text-balance text-5xl font-medium" />
+  class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
+  wrapper="h1"/>
 
  <PrismicRichText :field="slice.primary.body" />
  <template v-for="link in slice.primary.ctas" :key="link.key">
