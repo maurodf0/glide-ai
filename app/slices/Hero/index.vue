@@ -19,7 +19,10 @@ defineProps(
     :data-slice-variation="slice.variation"
   >
     
- <PrismicRichText :field="slice.primary.heading" />
+ <PrismicRichText 
+  :field="slice.primary.heading"
+  wrapper="h1" />
+
  <PrismicRichText :field="slice.primary.body" />
  <template v-for="link in slice.primary.ctas" :key="link.key">
   <PrismicLink :field="link" />

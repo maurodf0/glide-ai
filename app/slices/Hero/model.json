@@ -15,10 +15,10 @@
         "heading": {
           "type": "StructuredText",
           "config": {
-            "label": "Heading",
+            "label": "heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading1"
+            "multi": "heading1"
           }
         },
         "body": {

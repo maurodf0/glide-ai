@@ -156,14 +156,14 @@ export type AllDocumentTypes = PageDocument | SettingsDocument;
  */
 export interface HeroSliceDefaultPrimary {
   /**
-   * Heading field in *Hero → Default → Primary*
+   * heading field in *Hero → Default → Primary*
    *
-   * - **Field Type**: Title
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
    * - **API ID Path**: hero.default.primary.heading
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  heading: prismic.TitleField;
+  heading: prismic.RichTextField;
 
   /**
    * Body field in *Hero → Default → Primary*
