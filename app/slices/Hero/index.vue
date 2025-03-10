@@ -14,13 +14,18 @@ defineProps(
 </script>
 
 <template>
-  <section
+  <Bounded 
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
     
-  <h1 class="text-3xl text-center text-slate-600">{{ slice.primary.heading[0].text }}</h1>
+ <PrismicRichText :field="slice.primary.heading" />
+ <PrismicRichText :field="slice.primary.body" />
+ <template v-for="link in slice.primary.ctas" :key="link.key">
+  <PrismicLink :field="link" />
+</template>
+<PrismicImage :field="slice.primary.image" />
 
-  <pre>{{ slice }}</pre>
-  </section>
+
+  </Bounded>
 </template>
