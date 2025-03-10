@@ -18,18 +18,20 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    
- <PrismicText 
-  :field="slice.primary.heading"
-  class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
-  wrapper="h1"/>
+<div class="!text-center relative">
+    <PrismicText 
+      :field="slice.primary.heading"
+      class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
+      wrapper="h1"/>
 
- <PrismicRichText :field="slice.primary.body" />
- <template v-for="link in slice.primary.ctas" :key="link.key">
-  <PrismicLink :field="link" />
-</template>
-<PrismicImage :field="slice.primary.image" />
-
-
+    <PrismicText 
+      :field="slice.primary.body"
+      wrapper="p"
+      class="max-auto mt-6 max-w-md text-balance text-gray-300" />
+    <template v-for="link in slice.primary.ctas" :key="link.key">
+      <PrismicLink :field="link" />
+    </template>
+    <PrismicImage :field="slice.primary.image" />
+</div>
   </Bounded>
 </template>
