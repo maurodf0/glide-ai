@@ -20,10 +20,11 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-<div class="text-center relative">
+<div style="text-align:center;" class="text-center relative">
     <PrismicText 
+      style="font-size:48px;"
       :field="slice.primary.heading"
-      class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
+      class="mx-auto max-w-3xl text-balance text-5xl font-medium" 
       wrapper="h1"/>
 
     <PrismicText 
@@ -34,7 +35,8 @@ defineProps(
       <PrismicLink
         v-for="link in slice.primary.ctas" :key="link.key"
          :field="link"
-         class="buttonLink"
+         class="buttonLink text-center"
+         style="text-align:center;"
          />
     </div>
   <PrismicImage :field="slice.primary.image" />
