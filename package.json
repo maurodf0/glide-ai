@@ -21,9 +21,12 @@
     "@nuxtjs/prismic": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@slicemachine/adapter-nuxt": "^0.3.68",
+    "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.2",
     "eslint": "^9.18.0",
     "nuxt": "^3.15.2",
-    "slice-machine-ui": "^2.13.1"
+    "postcss": "^8.5.3",
+    "slice-machine-ui": "^2.13.1",
+    "tailwindcss": "^3.4.17"
   }
 }
