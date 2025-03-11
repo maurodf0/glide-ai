@@ -45,6 +45,23 @@ export default defineNuxtConfig({
       ]
     }
   },
+      postcss: { // <-- Added
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer')
+      ]
+    },
+  purgeCSS: { // <-- Added
+    extractors: () => [
+      {
+        extractor (content) {
+          return content.match(/.*/g)
+        },
+        extensions: ['vue']
+      }
+    ]
+  },
+
 
   compatibilityDate: '2025-01-06',
 })

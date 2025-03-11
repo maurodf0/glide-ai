@@ -22,7 +22,7 @@ defineProps(
 <div class="text-center relative">
     <PrismicText 
       :field="slice.primary.heading"
-      class="mx-auto max-w-3xl text-balance text-5xl font-medium" 
+      class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
       wrapper="h1"/>
 
     <PrismicText 
