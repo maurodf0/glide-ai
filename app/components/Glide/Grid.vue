@@ -17,8 +17,9 @@ const grid = [14, 30];
         fill="currentColor"
         opacity="0.2"
         class="glide-grid-item"
-        :d="`M${(j - 1) * 32 + 5} ${(i - 1) * 32 + 10 }L5 0L0 2.95082L3.93548 4L3.19355 2.95082Z`"  
+        :d="`M${(j - 1) * 32 + 5} ${(i - 1) * 32 + 10 }l1.806,-2.951l-5,2.951l3.936,1.049l-0.742,-1.049z`"  
         />
+        M3.19355,2.95082l 
     </template>    
     </svg>
 </template>
