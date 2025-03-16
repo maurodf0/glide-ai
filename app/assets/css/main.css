@@ -39,3 +39,12 @@ h1 {
 .hero-img {
   @apply rounded-lg;
 }
+
+.glassContainer {
+  @apply mt-16 relative w-fit;
+}
+
+.glassContainer::before {
+  content: "";
+  @apply absolute -inset-[10px] -z-10 rounded-xl border-gray-100/20 bg-gray-200/20;
+}
