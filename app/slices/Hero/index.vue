@@ -42,6 +42,7 @@ defineProps(
         class="hero-img"
         />
         <div class="BlurredShadow"></div>
+        <div class="BlurredShadow bottom"></div>
     </div>
 </div>
   </Bounded>
