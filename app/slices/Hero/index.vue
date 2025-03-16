@@ -36,9 +36,12 @@ defineProps(
          class="buttonLink text-center hero-cta"
          />
     </div>
-  <PrismicImage 
-    :field="slice.primary.image"
-    class="rounded-lg" />
+  <div class="glassContainer">
+    <PrismicImage 
+      :field="slice.primary.image"
+      class="hero-img"
+      />
+    </div>
 </div>
   </Bounded>
 </template>

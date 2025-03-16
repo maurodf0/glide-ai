@@ -35,3 +35,7 @@ h1 {
 .hero-p {
   @apply text-center mx-auto mt-6 max-w-md text-balance text-gray-300;
 }
+
+.hero-img {
+  @apply rounded-lg;
+}
