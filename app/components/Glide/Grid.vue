@@ -1,5 +1,33 @@
 <script setup lang="ts">
+import gsap from "gsap";
 const grid = [14, 30];
+
+onMounted(() => {
+
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    return;
+  }
+
+  gsap.set('.glide-grid-item', {
+      opacity: 0,
+      transformOrigin: 'center',
+      color: 'white',
+});
+gsap.set('#glideGrid', {
+      opacity: 1,
+});
+
+const tl = gsap.timeline();
+
+tl.to('.glide-gride-item', {
+    keyframes: 
+    [{opacity: 0, duration:0},
+    {opacity: .4, rotation: '+=180', color: '#0284c7', scale: 3, duration: 0.6},
+    ]
+})
+
+});
 
 </script>
 
