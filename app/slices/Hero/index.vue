@@ -28,15 +28,23 @@ tl.fromTo('.hero__heading', {
   duration: 1.4,
 });
 tl.fromTo('.hero__body', {
-  y:-50,
+  y: 50,
   opacity: 0,
 }, {
   y:0,
   opacity: 1,
-  duration: 1.4,
+  duration: 1.2,
+}, "-=0.6");
+tl.fromTo('.hero-cta', {
+  scale: 1.5,
+  opacity: 0,
+}, {
+  scale: 1,
+  opacity: 1,
+  duration: 1.2,
+  stagger: 0.2
+},"-=0.8") 
 })
-
-}) 
 </script>
 
 <template>
