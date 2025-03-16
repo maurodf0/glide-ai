@@ -36,7 +36,7 @@ body {
   @apply text-center mx-auto mt-6 max-w-md text-balance text-gray-300;
 }
 
-.hero-img {
+.hero__img {
   @apply rounded-lg w-full h-auto;
 }
 

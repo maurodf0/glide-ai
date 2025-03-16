@@ -42,9 +42,59 @@ tl.fromTo('.hero-cta', {
   scale: 1,
   opacity: 1,
   duration: 1.2,
-  stagger: 0.2
 },"-=0.8") 
-})
+
+tl.fromTo('.hero__image', {
+  y: 100,
+  opacity: 0,
+}, {
+  y:0,
+  opacity: 1,
+  duration: 1.2,
+}, "-=0.3");
+tl.fromTo('.hero__glow--1', {
+  scale: 0.5,
+  opacity: 0,
+}, {
+  scale: 1,
+  opacity: 1,
+  duration: 2.2,
+},"-=1.3")
+tl.fromTo('.hero__glow--2', {
+  scale: 0.5,
+  opacity: 0,
+}, {
+  scale: 1,
+  opacity: 1,
+  duration: 2.2,
+},"-<")
+
+gsap.to('.hero__glow--1', {
+  ease: "power2.inOut",
+  repeat: -1,
+  repeatDelay: 0,
+  keyframes: [
+   { top: '0%', left: '33%', duration: 0},
+   { top: '33%', left: '33%', duration: 2},
+    { top: '33%', left: '0%', duration: 3},
+    { top: '0%', left: '0%', duration: 2},
+    { top: '0%', left: '33%', duration: 3},
+  ]
+});
+gsap.to('.hero__glow--2', {
+  ease: "power2.inOut",
+  repeat: -1,
+  repeatDelay: 0,
+  keyframes: [
+   { top: '33%', left: '0%', duration: 0},
+   { top: '0%', left: '0%', duration: 2},
+    { top: '0%', left: '33%', duration: 3},
+    { top: '33%', left: '33%', duration: 2},
+    { top: '33%', left: '0%', duration: 3},
+  ]
+});
+
+});
 </script>
 
 <template>
@@ -71,13 +121,13 @@ tl.fromTo('.hero-cta', {
          class="buttonLink text-center hero-cta"
          />
     </div>
-  <div class="glassContainer">
+  <div class="glassContainer hero__image">
       <PrismicImage 
         :field="slice.primary.image"
         class="hero-img"
         />
-        <div class="BlurredShadow"></div>
-        <div class="BlurredShadow bottom"></div>
+        <div class="hero__glow--1 BlurredShadow"></div>
+        <div class="hero__glow--2 BlurredShadow bottom"></div>
     </div>
 </div>
   </Bounded>
