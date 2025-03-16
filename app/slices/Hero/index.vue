@@ -110,6 +110,7 @@ gsap.to('.hero__glow--2', {
     :data-slice-variation="slice.variation"
   >
 <div class="text-center relative">
+  <GlideGrid />
     <PrismicText 
       :field="slice.primary.heading" 
       wrapper="h1"
