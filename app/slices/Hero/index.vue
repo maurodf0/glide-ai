@@ -19,9 +19,24 @@ onMounted(() => {
   }
 });
 
-tl.fromTo('.hero__heading') 
-  
+tl.fromTo('.hero__heading', {
+  scale: 0.5,
+  opacity: 0,
+}, {
+  scale: 1,
+  opacity: 1,
+  duration: 1.4,
 });
+tl.fromTo('.hero__body', {
+  y:-50,
+  opacity: 0,
+}, {
+  y:0,
+  opacity: 1,
+  duration: 1.4,
+})
+
+}) 
 </script>
 
 <template>
@@ -40,7 +55,7 @@ tl.fromTo('.hero__heading')
     <PrismicText 
       :field="slice.primary.body"
       wrapper="p"
-      class="hero-p" />
+      class="hero__body" />
     <div class="ctas">
       <PrismicLink
         v-for="link in slice.primary.ctas" :key="link.key"
