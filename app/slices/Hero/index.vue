@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import gsap from "gsap";
 import type { Content } from "@prismicio/client";
 
 // The array passed to `getSliceComponentProps` is purely optional.
@@ -11,6 +12,16 @@ defineProps(
     "context",
   ]),
 );
+
+onMounted(() => {
+  const tl = gsap.timeline({defaults: {
+    ease: "power2.inOut"
+  }
+});
+
+tl.fromTo('.hero__heading') 
+  
+});
 </script>
 
 <template>
@@ -23,7 +34,8 @@ defineProps(
 <div class="text-center relative">
     <PrismicText 
       :field="slice.primary.heading" 
-      wrapper="h1"/>
+      wrapper="h1"
+      class="hero__heading" />
 
     <PrismicText 
       :field="slice.primary.body"
