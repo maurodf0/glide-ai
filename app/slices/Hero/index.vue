@@ -15,29 +15,30 @@ defineProps(
 
 <template>
   <Bounded 
-  style="text-align: center;"
+  class="bounded-container"
     as="main"
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
 <div class="text-center relative">
     <PrismicText 
-      :field="slice.primary.heading"
-      class="mx-auto max-w-3xl text-balance text-3xl font-medium" 
+      :field="slice.primary.heading" 
       wrapper="h1"/>
 
     <PrismicText 
       :field="slice.primary.body"
       wrapper="p"
-      class="text-center max-auto mt-6 max-w-md text-balance text-gray-300" />
-    <div style="text-align: center;" class="flex flex-wrap justify-center mt-8">
+      class="hero-p" />
+    <div class="ctas">
       <PrismicLink
         v-for="link in slice.primary.ctas" :key="link.key"
          :field="link"
-         class="buttonLink text-center"
+         class="buttonLink text-center hero-cta"
          />
     </div>
-  <PrismicImage :field="slice.primary.image" />
+  <PrismicImage 
+    :field="slice.primary.image"
+    class="rounded-lg" />
 </div>
   </Bounded>
 </template>

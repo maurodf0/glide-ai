@@ -9,7 +9,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Laborum ad ut ipsum voluptate aliqua in aliquip. Eiusmod culpa ",
+							"text": "The AI features you need to transport your business from the little leagues to the big time.",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -21,12 +21,12 @@
 				"type": "Link",
 				"value": [
 					{
-						"key": "60f007ce-c4a5-48e7-8cda-ea57d84579f6",
 						"__TYPE__": "LinkContent",
+						"key": "60f007ce-c4a5-48e7-8cda-ea57d84579f6",
 						"value": {
 							"__TYPE__": "ExternalLink",
 							"url": "http://google.com",
-							"text": "fish"
+							"text": "Download Now"
 						}
 					}
 				]
@@ -60,8 +60,10 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Popular"
-						}
+							"text": "Effortless motion, built with precision",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			}
