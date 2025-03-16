@@ -37,7 +37,7 @@ h1 {
 }
 
 .hero-img {
-  @apply rounded-lg;
+  @apply rounded-lg w-full h-auto;
 }
 
 .glassContainer {
@@ -47,4 +47,8 @@ h1 {
 .glassContainer::before {
   content: "";
   @apply absolute -inset-[10px] -z-10 rounded-xl border-gray-100/20 bg-gray-200/20 backdrop-blur-md;
+}
+
+.BlurredShadow {
+  @apply absolute left-1/2 -translate-x-1/2 top-0 -z-10 h-2/3 w-full bg-sky-700/80 blur-3xl md:;
 }

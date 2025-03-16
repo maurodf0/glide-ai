@@ -31,6 +31,19 @@
 					}
 				]
 			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Effortless motion, built with precision",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
 			"image": {
 				"__TYPE__": "ImageContent",
 				"provider": "imgix",
@@ -53,19 +66,6 @@
 					}
 				},
 				"thumbnails": {}
-			},
-			"heading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Effortless motion, built with precision",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
 			}
 		},
 		"items": []

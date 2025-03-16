@@ -37,10 +37,11 @@ defineProps(
          />
     </div>
   <div class="glassContainer">
-    <PrismicImage 
-      :field="slice.primary.image"
-      class="hero-img"
-      />
+      <PrismicImage 
+        :field="slice.primary.image"
+        class="hero-img"
+        />
+        <div class="BlurredShadow"></div>
     </div>
 </div>
   </Bounded>
