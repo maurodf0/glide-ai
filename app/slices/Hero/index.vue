@@ -15,6 +15,7 @@ defineProps(
 
 <template>
   <Bounded 
+  style="text-align: center;"
     as="main"
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
@@ -29,11 +30,11 @@ defineProps(
       :field="slice.primary.body"
       wrapper="p"
       class="text-center max-auto mt-6 max-w-md text-balance text-gray-300" />
-    <div class="flex flex-wrap justify-center mt-8">
+    <div style="text-align: center;" class="flex flex-wrap justify-center mt-8">
       <PrismicLink
         v-for="link in slice.primary.ctas" :key="link.key"
          :field="link"
-         class="buttonLink"
+         class="buttonLink text-center"
          />
     </div>
   <PrismicImage :field="slice.primary.image" />
