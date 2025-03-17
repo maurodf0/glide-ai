@@ -59,3 +59,7 @@ body {
 .glideGrid {
   @apply absolute -left-2 top-0 -z-10;
 }
+
+.glideTextEm {
+  @apply bg-gradient-to-b from-teal-400 to-sky-400 bg-clip-text text-transparent not-italic;
+}

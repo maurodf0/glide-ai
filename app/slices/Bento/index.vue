@@ -15,12 +15,12 @@ defineProps(
 
 <template>
   <Bounded
+    class="bounded-container"
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
     <PrismicRichText 
-      wrap="h2" 
-      class="text-center"
+      :components="{em: RichTextGlideText}"
       :field="slice.primary.heading" />
     <PrismicRichText :field="slice.primary.body" />
     <template v-for="item in slice.primary.bento" :key="item.id">
