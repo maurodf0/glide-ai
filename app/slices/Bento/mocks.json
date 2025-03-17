@@ -62,7 +62,6 @@
 							[
 								"image",
 								{
-									"__TYPE__": "ImageContent",
 									"origin": {
 										"id": "main",
 										"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
@@ -81,7 +80,16 @@
 										"background": "transparent"
 									},
 									"alt": "scientist",
+									"credits": null,
+									"__TYPE__": "ImageContent",
 									"thumbnails": {}
+								}
+							],
+							[
+								"is_wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
 								}
 							]
 						]

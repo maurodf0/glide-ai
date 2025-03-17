@@ -184,6 +184,17 @@ export interface BentoSliceDefaultPrimaryBentoItem {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
+
+  /**
+   * Is Wide? field in *Bento → Default → Primary → Bento*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: bento.default.primary.bento[].is_wide
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  is_wide: prismic.BooleanField;
 }
 
 /**
