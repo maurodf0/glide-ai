@@ -20,10 +20,52 @@ gsap.set('#glideGrid', {
 
 const tl = gsap.timeline();
 
-tl.to('.glide-gride-item', {
+// Entrace
+tl.to('.glide-grid-item', {
     keyframes: 
     [{opacity: 0, duration:0},
-    {opacity: .4, rotation: '+=180', color: '#0284c7', scale: 3, duration: 0.6},
+    {   opacity: .4, 
+        rotation: '+=180',
+         color: '#0284c7', 
+         scale: 3, 
+         duration: 0.6, 
+         stagger: {amount: 2, grid, from: 'center', },
+    },
+        {   
+        opacity: .2, 
+        rotation: '+=180',
+         color: '#fff', 
+         scale: 1, 
+         duration: 0.6, 
+         stagger: {amount: 3, grid, from: 'center', },
+    },
+    ]
+})
+
+//Loop 
+
+tl.to('.glide-grid-item', {
+    delay: 12,
+    repeat: -1,
+    repeatDelay: 6,
+    keyframes: 
+    [
+    {   
+        opacity: .4, 
+        rotation: '+=180',
+         color: '#0284c7', 
+         scale: 3, 
+         duration: 0.6, 
+         stagger: {amount: 2, grid, from: 'center', },
+    },
+        {   
+        opacity: .2, 
+        rotation: '+=180',
+         color: '#fff', 
+         scale: 1, 
+         duration: 0.6, 
+         stagger: {amount: 3, grid, from: 'center', },
+    },
     ]
 })
 
