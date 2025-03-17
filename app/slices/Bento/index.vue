@@ -14,16 +14,19 @@ defineProps(
 </script>
 
 <template>
-  <section
+  <Bounded
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    <PrismicRichText :field="slice.primary.heading" />
+    <PrismicRichText 
+      wrap="h2" 
+      class="text-center"
+      :field="slice.primary.heading" />
     <PrismicRichText :field="slice.primary.body" />
     <template v-for="item in slice.primary.bento" :key="item.id">
-     <PrismicRichText :field="item.title" />
-     <PrismicRichText :field="item.body" />
-     <PrismicImage :field="item.image" />
+      <PrismicRichText :field="item.title" />
+      <PrismicRichText :field="item.body" />
+      <PrismicImage :field="item.image" />
     </template>
-  </section>
+  </Bounded>
 </template>
