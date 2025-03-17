@@ -30,7 +30,7 @@ body {
 }
 
 .hero__heading {
-  @apply mx-auto max-w-3xl text-balance text-5xl font-medium;
+  @apply mx-auto max-w-3xl text-balance text-5xl md:text-7xl font-medium;
 }
 .hero__body {
   @apply text-center mx-auto mt-6 max-w-md text-balance text-gray-300;
