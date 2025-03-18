@@ -28,8 +28,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Minim cupidatat aliquip et adipisicing. Dolor aute proident ullamco adipisicing irure enim velit non nostrud esse. Amet mollit nostrud consequat sint id officia consectetur laborum et deserunt laborum consectetur tempor ad ipsum."
-						}
+							"text": "Introducing a new way of building components and layouts that leaves everything else in the dust.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -47,8 +49,10 @@
 										{
 											"type": "heading3",
 											"content": {
-												"text": "Brief"
-											}
+												"text": "Design Principles",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
 									]
 								}
@@ -61,8 +65,80 @@
 										{
 											"type": "paragraph",
 											"content": {
-												"text": "Quis cupidatat sunt ex quis elit. Veniam magna officia velit voluptate fugiat ut in. Amet deserunt culpa id ullamco quis minim elit incididunt consequat ut magna culpa labore ut."
-											}
+												"text": "Our features power your next big design, whether it’s a website or an app, Glisten is your friend.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"is_wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517976487492-5750f3195933?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2NrZXR8ZW58MHx8fHwxNzQyMzE5OTcwfDA&ixlib=rb-4.0.3&q=85",
+									"alt": "gray spacecraft taking off during daytime",
+									"origin": {
+										"id": "OHOU-5UVIYQ",
+										"url": "https://images.unsplash.com/photo-1517976487492-5750f3195933?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2NrZXR8ZW58MHx8fHwxNzQyMzE5OTcwfDA&ixlib=rb-4.0.3&q=85",
+										"width": 3000,
+										"height": 2000
+									},
+									"width": 3000,
+									"height": 2000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Benchmark with AI",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Never worry about pixel perfection again, thanks to our patented AI critic, telling you when something is misaligned.",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
 									]
 								}
@@ -70,26 +146,26 @@
 							[
 								"image",
 								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1586852854810-7550b5a7a100?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxyb2NrZXxlbnwwfHx8fDE3NDIzMTk5NzB8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "brown wood log on seashore under cloudy sky during daytime",
 									"origin": {
-										"id": "main",
-										"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
-										"width": 3344,
-										"height": 2509
+										"id": "pUC3vNjKLnM",
+										"url": "https://images.unsplash.com/photo-1586852854810-7550b5a7a100?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxyb2NrZXxlbnwwfHx8fDE3NDIzMTk5NzB8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5477,
+										"height": 3651
 									},
-									"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
-									"width": 3344,
-									"height": 2509,
+									"width": 5477,
+									"height": 3651,
 									"edit": {
+										"background": "transparent",
 										"zoom": 1,
 										"crop": {
 											"x": 0,
 											"y": 0
-										},
-										"background": "transparent"
+										}
 									},
-									"alt": "scientist",
-									"credits": null,
-									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
 							],
@@ -98,6 +174,146 @@
 								{
 									"__TYPE__": "BooleanContent",
 									"value": true
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Aesthetic Excellence",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Never worry about pixel perfection again, thanks to our patented AI critic, telling you when something is misaligned.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582148405586-fb5af4396bda?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2N8ZW58MHx8fHwxNzQyMzIwMDQxfDA&ixlib=rb-4.0.3&q=85",
+									"alt": "brown rock formation under white clouds during daytime",
+									"origin": {
+										"id": "ctWw2S9VqOI",
+										"url": "https://images.unsplash.com/photo-1582148405586-fb5af4396bda?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2N8ZW58MHx8fHwxNzQyMzIwMDQxfDA&ixlib=rb-4.0.3&q=85",
+										"width": 7360,
+										"height": 4912
+									},
+									"width": 7360,
+									"height": 4912,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"is_wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Design Principles",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"body",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our features power your next big design, whether it’s a website or an app, Glisten is your friend.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1510313420591-f06c361d1397?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8cm9jfGVufDB8fHx8MTc0MjMyMDA0MXww&ixlib=rb-4.0.3&q=85",
+									"alt": "rocks in body of water",
+									"origin": {
+										"id": "fBw4rdIpYQ4",
+										"url": "https://images.unsplash.com/photo-1510313420591-f06c361d1397?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8cm9jfGVufDB8fHx8MTc0MjMyMDA0MXww&ixlib=rb-4.0.3&q=85",
+										"width": 6000,
+										"height": 4000
+									},
+									"width": 6000,
+									"height": 4000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"is_wide",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
 								}
 							]
 						]
