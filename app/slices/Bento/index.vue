@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { Content } from "@prismicio/client";
+import GlideText from "~/components/RichText/GlideText.vue";
+import Heading2 from "~/components/RichText/Heading2.vue";
 
 // The array passed to `getSliceComponentProps` is purely optional.
 // Consider it as a visual hint for you when templating your slice.
@@ -20,9 +22,11 @@ defineProps(
     :data-slice-variation="slice.variation"
   >
     <PrismicRichText 
-      :components="{em: RichTextGlideText}"
+      :components="{heading2: Heading2,  em: GlideText}"
       :field="slice.primary.heading" />
-    <PrismicRichText :field="slice.primary.body" />
+    <PrismicRichText 
+    class="glideTextEm"
+    :field="slice.primary.body" />
     <template v-for="item in slice.primary.bento" :key="item.id">
       <PrismicRichText :field="item.title" />
       <PrismicRichText :field="item.body" />

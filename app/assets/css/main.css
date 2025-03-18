@@ -60,6 +60,6 @@ body {
   @apply absolute -left-2 top-0 -z-10;
 }
 
-.glideTextEm {
-  @apply bg-gradient-to-b from-teal-400 to-sky-400 bg-clip-text text-transparent not-italic;
+.heading2 {
+  @apply max-w-3xl mx-auto text-balance !text-center text-5xl md:text-7xl font-medium;
 }
