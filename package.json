@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.14",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/prismjs": "^1.26.5",
     "gsap": "^3.12.7"
   }
