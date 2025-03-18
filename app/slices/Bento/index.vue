@@ -27,8 +27,11 @@ defineProps(
     wrapper="div"
     class="mx-auto mt-6 max-w-md text-balance text-center text-gray-300"
     :field="slice.primary.body" />
-    <div>
-      <article v-for="item in slice.primary.bento" :key="$prismic.asText(item.title)"> 
+    <div class="mt-16 grid max-w-4xl grid-rows-[auto_auto_auto] gap-8 md:grid-cols-3 md:gap-10">
+      <article 
+        v-for="item in slice.primary.bento" 
+        :key="$prismic.asText(item.title)"
+        class="glassContainer grid grid-rows gap-4 rounded-lg bg-gray-950/60 p-4">
         <PrismicRichText 
         wrapper="h3"
           class="text-2xl"
