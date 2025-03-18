@@ -63,3 +63,7 @@ body {
 .heading2 {
   @apply max-w-3xl mx-auto text-balance !text-center text-5xl md:text-7xl font-medium;
 }
+
+.bentoTitle {
+  @apply text-5xl;
+}

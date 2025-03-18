@@ -17,7 +17,6 @@ defineProps(
 
 <template>
   <Bounded
-    class="bounded-container"
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
@@ -25,12 +24,22 @@ defineProps(
       :components="{heading2: Heading2,  em: GlideText}"
       :field="slice.primary.heading" />
     <PrismicRichText 
-    class="glideTextEm"
+    wrapper="div"
+    class="mx-auto mt-6 max-w-md text-balance text-center text-gray-300"
     :field="slice.primary.body" />
-    <template v-for="item in slice.primary.bento" :key="item.id">
-      <PrismicRichText :field="item.title" />
-      <PrismicRichText :field="item.body" />
-      <PrismicImage :field="item.image" />
-    </template>
+    <div>
+      <article v-for="item in slice.primary.bento" :key="$prismic.asText(item.title)"> 
+        <PrismicRichText 
+        wrapper="h3"
+          class="text-2xl"
+          :field="item.title" />
+        <PrismicRichText
+          wrapper="div"
+          class="max-w-md text-balance text-gray-300" 
+          :field="item.body" />
+        <PrismicImage
+          class="max-h-36 w-auto" :field="item.image" />
+      </article>
+    </div>
   </Bounded>
 </template>
