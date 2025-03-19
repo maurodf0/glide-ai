@@ -83,7 +83,6 @@
 							[
 								"image",
 								{
-									"__TYPE__": "ImageContent",
 									"provider": "imgix",
 									"url": "https://images.unsplash.com/photo-1517976487492-5750f3195933?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2NrZXR8ZW58MHx8fHwxNzQyMzE5OTcwfDA&ixlib=rb-4.0.3&q=85",
 									"alt": "gray spacecraft taking off during daytime",
@@ -103,6 +102,8 @@
 											"y": 0
 										}
 									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
 							]
@@ -146,7 +147,6 @@
 							[
 								"image",
 								{
-									"__TYPE__": "ImageContent",
 									"provider": "imgix",
 									"url": "https://images.unsplash.com/photo-1586852854810-7550b5a7a100?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxyb2NrZXxlbnwwfHx8fDE3NDIzMTk5NzB8MA&ixlib=rb-4.0.3&q=85",
 									"alt": "brown wood log on seashore under cloudy sky during daytime",
@@ -166,6 +166,8 @@
 											"y": 0
 										}
 									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
 							],
@@ -216,7 +218,6 @@
 							[
 								"image",
 								{
-									"__TYPE__": "ImageContent",
 									"provider": "imgix",
 									"url": "https://images.unsplash.com/photo-1582148405586-fb5af4396bda?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxyb2N8ZW58MHx8fHwxNzQyMzIwMDQxfDA&ixlib=rb-4.0.3&q=85",
 									"alt": "brown rock formation under white clouds during daytime",
@@ -236,6 +237,8 @@
 											"y": 0
 										}
 									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
 							],
@@ -286,7 +289,6 @@
 							[
 								"image",
 								{
-									"__TYPE__": "ImageContent",
 									"provider": "imgix",
 									"url": "https://images.unsplash.com/photo-1510313420591-f06c361d1397?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8cm9jfGVufDB8fHx8MTc0MjMyMDA0MXww&ixlib=rb-4.0.3&q=85",
 									"alt": "rocks in body of water",
@@ -306,6 +308,8 @@
 											"y": 0
 										}
 									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
 									"thumbnails": {}
 								}
 							],
