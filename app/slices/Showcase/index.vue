@@ -24,6 +24,7 @@ defineProps(
     :field="slice.primary.heading" />
     <article 
     class="relative mt-16 grid items-center gap-8 rounded-xl border border-sky-50/20 bg-gradient-to-b from-gray-50/15 to-gray-50/5 p-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
+    <div class="gridBackground"></div>
       <div>
         <figure class="w-fit rounded-lg bg-sky-900 p-4 text-3xl border-gray-100/10 border-4">
           <Icon :name="slice.primary.icon" class="block" />
@@ -47,3 +48,16 @@ defineProps(
    </article>
   </Bounded>
 </template>
+
+<style scoped>
+
+.gridBackground {
+  background-image: url('/assets/grid-pattern.png');
+  position: absolute;
+  inset: 0;
+  background: repeat repeat;
+  z-index: -1;
+  background-position: center;
+  opacity: .15;
+}
+</style>
