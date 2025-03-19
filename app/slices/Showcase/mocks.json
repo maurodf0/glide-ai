@@ -1,83 +1,6 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
-					"width": 3810,
-					"height": 5715
-				},
-				"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
-				"width": 3810,
-				"height": 5715,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"alt": "able",
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"heading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Gather"
-						}
-					}
-				]
-			},
-			"icon": {
-				"__TYPE__": "FieldContent",
-				"value": "ph:gear-six-fill",
-				"type": "Select"
-			},
-			"subheading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading3",
-						"content": {
-							"text": "Threw"
-						}
-					}
-				]
-			},
-			"body": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Consequat nulla nulla elit sit reprehenderit aliquip duis cillum adipisicing dolor. Culpa labore irure consectetur ipsum Lorem nostrud magna esse mollit occaecat ex."
-						}
-					}
-				]
-			},
-			"cta": {
-				"key": "c6f2ffcf-6039-4408-b671-7ccd536bcaec",
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "https://slicemachine.dev",
-					"text": "drop"
-				}
-			}
-		},
-		"items": []
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
 		"variation": "reversed",
 		"primary": {
 			"heading": {
@@ -94,7 +17,6 @@
 				]
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
 				"provider": "imgix",
 				"url": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxyb2NrZXR8ZW58MHx8fHwxNzQyMzE5OTcwfDA&ixlib=rb-4.0.3&q=85",
 				"alt": "rocket ship photography",
@@ -114,6 +36,8 @@
 						"y": 0
 					}
 				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"icon": {
@@ -148,8 +72,8 @@
 				]
 			},
 			"cta": {
-				"__TYPE__": "LinkContent",
 				"key": "b628188a-1076-461c-9399-7e64b8012cf8",
+				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "http://twitter.com",
@@ -163,5 +87,88 @@
 				"value": []
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"image": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjYXJ8ZW58MHx8fHwxNzQyNDI3NDc1fDA&ixlib=rb-4.0.3&q=85",
+				"alt": "silver sports coupe on asphalt road",
+				"origin": {
+					"id": "ZRns2R5azu0",
+					"url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjYXJ8ZW58MHx8fHwxNzQyNDI3NDc1fDA&ixlib=rb-4.0.3&q=85",
+					"width": 5472,
+					"height": 3648
+				},
+				"width": 5472,
+				"height": 3648,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Your Glide.\nYour workflow. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"icon": {
+				"__TYPE__": "FieldContent",
+				"value": "ph:gear-six-fill",
+				"type": "Select"
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Design the next big thing.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cta": {
+				"__TYPE__": "LinkContent",
+				"key": "c6f2ffcf-6039-4408-b671-7ccd536bcaec",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "Get Started"
+				}
+			}
+		},
+		"items": []
 	}
 ]

@@ -18,6 +18,7 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
+  <div class="absolute -z-10 aspect-video w-full max-w-2xl rounded-full bg-sky-700 blur-[120px] filter mix-blend-screen"></div>
    <PrismicRichText 
     wrapper="header"
     class="text-balance text-center text-5xl md:text-7xl font-medium"
