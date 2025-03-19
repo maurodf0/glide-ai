@@ -59,5 +59,6 @@ defineProps(
   z-index: -1;
   background-position: center;
   opacity: .15;
+  mask-image: radial-gradient(circle at 60% 50%, black 10%, transparent 40%);
 }
 </style>
