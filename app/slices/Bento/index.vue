@@ -31,7 +31,7 @@ defineProps(
       <article 
         v-for="item in slice.primary.bento" 
         :key="$prismic.asText(item.title)"
-        class="glassContainer grid grid-rows gap-4 rounded-lg bg-gray-950/60 p-4"
+        class="glassContainer grid grid-rows-subgrid row-span-3 gap-4 rounded-lg bg-gray-950/60 bg:bg-gray-100/10 p-4"
         :class="item.is_wide ? 'md:col-span-2' : 'md:col-span-1'">
         <PrismicRichText 
         wrapper="h3"
