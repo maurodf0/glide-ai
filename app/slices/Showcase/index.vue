@@ -55,7 +55,7 @@ defineProps(
   background-image: url('/assets/grid-pattern.png');
   position: absolute;
   inset: 0;
-  background: repeat repeat;
+  background-repeat: repeat repeat;
   z-index: -1;
   background-position: center;
   opacity: .15;
