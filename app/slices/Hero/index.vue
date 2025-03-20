@@ -130,7 +130,7 @@ gsap.to('.hero__glow--2', {
   <div class="glassContainer hero__image">
       <PrismicImage 
         :field="slice.primary.image"
-        class="hero-img"
+        class="hero-img mt-16"
         />
         <div class="hero__glow--1 BlurredShadow"></div>
         <div class="hero__glow--2 BlurredShadow bottom"></div>
