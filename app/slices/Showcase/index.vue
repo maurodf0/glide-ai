@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Content } from "@prismicio/client";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/scrollTrigger";
 
 // The array passed to `getSliceComponentProps` is purely optional.
 // Consider it as a visual hint for you when templating your slice.
@@ -12,6 +13,49 @@ defineProps(
     "context",
   ]),
 );
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReducedMotion) {
+    return;
+  }
+
+  gsap.fromTo('.showcase__heading', {
+    y: 100,
+    opacity: 0,
+  }, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.showcase__heading',
+      start: 'top center+=200',
+      end: '100% center-=150',
+      markers: true,
+      scrub: true,
+      toggleActions: 'play pause resume reverse',
+    },
+
+  });
+
+  // gsap.fromTo('.showcase__glow', {
+  //   opacity: 0,
+  //   scale: 0.5,
+  //   y: 100,
+  // }, {
+  //   opacity: 1,
+  //   scale: 1,
+  //   y: 0,
+  //   scrollTrigger: {
+  //     trigger: '.showcase__heading',
+
+  //     scrub: true,
+  //     toggleActions: 'play pause resume reverse',
+  //   }
+  //   });
+});
+
 </script>
 
 <template>
@@ -22,11 +66,11 @@ defineProps(
   <div class="absolute -z-10 aspect-video w-full max-w-2xl rounded-full bg-sky-700 blur-[120px] filter mix-blend-screen"></div>
    <PrismicRichText 
     wrapper="header"
-    class="text-balance text-center text-5xl md:text-7xl font-medium"
+    class="showcase__heading text-balance text-center text-5xl md:text-7xl font-medium"
     :field="slice.primary.heading" />
     <article 
     class="relative mt-16 grid items-center gap-8 rounded-xl border border-sky-50/20 bg-gradient-to-b from-gray-50/15 to-gray-50/5 p-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
-    <div class="gridBackground"></div>
+    <div class="showcase__glow gridBackground"></div>
       <div>
         <figure class="w-fit rounded-lg bg-sky-900 p-4 text-3xl border-gray-100/10 border-4">
           <Icon :name="slice.primary.icon" class="block" />
