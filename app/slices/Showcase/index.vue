@@ -32,28 +32,28 @@ onMounted(() => {
       trigger: '.showcase__heading',
       start: 'top center+=200',
       end: '100% center-=150',
-      markers: true,
       scrub: true,
       toggleActions: 'play pause resume reverse',
     },
 
   });
 
-  // gsap.fromTo('.showcase__glow', {
-  //   opacity: 0,
-  //   scale: 0.5,
-  //   y: 100,
-  // }, {
-  //   opacity: 1,
-  //   scale: 1,
-  //   y: 0,
-  //   scrollTrigger: {
-  //     trigger: '.showcase__heading',
-
-  //     scrub: true,
-  //     toggleActions: 'play pause resume reverse',
-  //   }
-  //   });
+  gsap.fromTo('.showcase__glow', {
+    opacity: 0,
+    scale: 0.5,
+    y: 100,
+  }, {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: '.showcase__heading',
+      markers: true,
+      scrub: true,
+      end: '100% center+=50',
+      toggleActions: 'play pause resume reverse',
+    }
+    });
 });
 
 </script>
@@ -63,14 +63,14 @@ onMounted(() => {
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-  <div class="absolute -z-10 aspect-video w-full max-w-2xl rounded-full bg-sky-700 blur-[120px] filter mix-blend-screen"></div>
+  <div class="showcase__glow absolute -z-10 aspect-video w-full max-w-2xl rounded-full bg-sky-700 blur-[120px] filter mix-blend-screen"></div>
    <PrismicRichText 
     wrapper="header"
     class="showcase__heading text-balance text-center text-5xl md:text-7xl font-medium"
     :field="slice.primary.heading" />
     <article 
     class="relative mt-16 grid items-center gap-8 rounded-xl border border-sky-50/20 bg-gradient-to-b from-gray-50/15 to-gray-50/5 p-8 backdrop-blur-sm lg:grid-cols-3 lg:gap-0 lg:py-12">
-    <div class="showcase__glow gridBackground"></div>
+    <div class="gridBackground"></div>
       <div>
         <figure class="w-fit rounded-lg bg-sky-900 p-4 text-3xl border-gray-100/10 border-4">
           <Icon :name="slice.primary.icon" class="block" />
