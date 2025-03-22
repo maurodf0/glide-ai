@@ -16,7 +16,7 @@ const props = defineProps(
 const caseStudies = computed( () => {
   return props.slice.primary.case_studies
   .map(item => item.link)
-  .filter(link => prismic.isFilled.contentRelationship(link))
+  .filter(link => prismic.isFilled.contentRelationship(link)) as unknown as Content.CaseStudyDocument[];
   });
 
 </script>
@@ -37,11 +37,14 @@ const caseStudies = computed( () => {
     :field="slice.primary.body" />
     <div class="grid mt-20 gap-16">
     <article 
-      v-for="item in caseStudies"
-      :key="caseStudies.id">
-    {{ caseStudies }}
+      v-for="caseStudy in caseStudies"
+      :key="caseStudy.id">
+      <PrismicText :field="caseStudy.data.company"/>
+      <PrismicRichText :field="caseStudy.data.description"/>
+      <PrismicImage :field="caseStudy.data.cover"/>
     </article>
 </div>
 
   </Bounded>
 </template>
+
