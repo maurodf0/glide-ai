@@ -49,7 +49,10 @@
                 "config": {
                   "label": "Link",
                   "select": "document",
-                  "repeat": false
+                  "repeat": false,
+                  "customtypes": [
+                    "case_studies"
+                  ]
                 }
               }
             }

@@ -376,7 +376,7 @@ export interface CaseStudiesSliceDefaultPrimaryCaseStudiesItem {
    * - **API ID Path**: case_studies.default.primary.case_studies[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  link: prismic.ContentRelationshipField;
+  link: prismic.ContentRelationshipField<"case_studies">;
 }
 
 /**
