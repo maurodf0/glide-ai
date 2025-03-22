@@ -43,7 +43,7 @@ export default defineNuxtConfig({
           path: '/',
         },
         {
-        type: 'case_study',
+        type: 'case_studies',
         path: '/case-studies/:uid',
         }
       ]
