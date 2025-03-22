@@ -20,8 +20,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Incididunt consectetur proident nostrud nulla cupidatat dolore do velit deserunt occaecat ipsum quis nulla esse cupidatat. Consectetur aute Lorem magna irure pariatur veniam proident proident ipsum sit anim in cillum aliquip est."
-						}
+							"text": "Incididunt consectetur proident nostrud nulla cupidatat dolore do ",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -35,8 +37,60 @@
 								"icon_id",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "familiar",
-									"type": "Text"
+									"type": "Text",
+									"value": "simple-icons:cloudflare"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:cloudflare"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:cloudflare"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:cloudflare"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:cloudflare"
 								}
 							]
 						]

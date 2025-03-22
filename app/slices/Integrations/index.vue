@@ -14,11 +14,24 @@ defineProps(
 </script>
 
 <template>
-  <section
+  <Bounded
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    Placeholder component for integrations (variation: {{ slice.variation }})
-    Slices
-  </section>
+    <PrismicRichText 
+    wrapper="h2"
+    class="text-balance text-center text-5xl md:text-7xl font-medium"
+    :field="slice.primary.heading" />
+    <PrismicRichText 
+    wrapper="div"
+    class="text-center text-gray-300 max-w-md mx-auto"
+    :field="slice.primary.body" />
+    <div  class="grid grid-cols-5 gap-4 mt-16 mx-auto">
+      <div 
+        v-for="item in slice.primary.integrations"
+        :key="item.id">
+        <Icon :name="item.icon_id" />
+      </div>
+    </div>
+  </Bounded>
 </template>
