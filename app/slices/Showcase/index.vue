@@ -48,7 +48,6 @@ onMounted(() => {
     y: 0,
     scrollTrigger: {
       trigger: '.showcase__heading',
-      markers: true,
       scrub: true,
       end: '100% center+=50',
       toggleActions: 'play pause resume reverse',
