@@ -25,29 +25,6 @@
 					}
 				]
 			},
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-					"width": 3882,
-					"height": 2584
-				},
-				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-				"width": 3882,
-				"height": 2584,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"alt": "nose",
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
 			"case_studies": {
 				"__TYPE__": "GroupContentType",
 				"value": [
@@ -57,8 +34,8 @@
 							[
 								"link",
 								{
-									"__TYPE__": "LinkContent",
 									"key": "285c8d8a-67f3-42d6-8beb-dfa6b55b6eca",
+									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "DocumentLink",
 										"id": "mock_document_id"

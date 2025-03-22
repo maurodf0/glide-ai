@@ -404,16 +404,6 @@ export interface CaseStudiesSliceDefaultPrimary {
   body: prismic.RichTextField;
 
   /**
-   * Image field in *CaseStudies → Default → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: case_studies.default.primary.image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
-
-  /**
    * Case Studies field in *CaseStudies → Default → Primary*
    *
    * - **Field Type**: Group

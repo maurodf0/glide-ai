@@ -30,14 +30,6 @@
             "multi": "paragraph,strong,em"
           }
         },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
         "case_studies": {
           "type": "Group",
           "config": {

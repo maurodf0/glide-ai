@@ -5,7 +5,12 @@ const prismic = usePrismic();
 const route = useRoute();
 const { data: page } = await useAsyncData(
   `[case_studies-uid-${route.params.uid}]`,
-  () => prismic.client.getByUID("case_studies", route.params.uid as string),
+  () => prismic.client.getByUID("case_studies", route.params.uid as string, {
+    fetchLinks: ['case_studies.company', 
+                 'case_studies.description', 
+                 'case_studies.cover'
+                ]
+  }),
 );
 
 useSeoMeta({
