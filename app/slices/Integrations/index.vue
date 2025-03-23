@@ -29,7 +29,10 @@ const integrations = computed( () => {
   >
   <img src="/assets/gradient.png"
     class="absolute inset-0 h-full w-full object-cover">
-
+  <GlideLogoFrame class="absolute left-1/2 top-1/2 -translate-x-[50%] -translate-y-1/2 scale-150 opacity-60" />
+  <GlideLogoFrame class="absolute left-1/2 top-1/2 -translate-x-[120%] -translate-y-1/3 scale-150 opacity-60" />
+  <GlideLogoFrame class="absolute left-1/2 top-1/2 -translate-x-[20%] -translate-y-2/3 scale-150 opacity-60" />
+  
     <PrismicText 
     wrapper="h2"
     class="relative text-balance text-center text-5xl md:text-7xl font-medium  bg-gradient-to-b from-sky-50 to bg-sky-300 bg-clip-text text-transparent py-2"
