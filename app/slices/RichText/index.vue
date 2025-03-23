@@ -12,7 +12,7 @@ defineProps(getSliceComponentProps<Content.RichTextSlice>(
   <Bounded>
     <PrismicRichText
       :field="slice.primary.content"
-      class="richtext prose-invert prose-slate w-full"
+      class="prose-invert prose-slate w-full"
       wrapper="div"
     />
   </Bounded>
