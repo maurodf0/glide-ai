@@ -103,6 +103,7 @@ export type CaseStudiesDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | IntegrationsSlice
   | CaseStudiesSlice
   | ShowcaseSlice
   | BentoSlice
