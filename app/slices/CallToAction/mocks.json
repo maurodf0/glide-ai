@@ -1,0 +1,35 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Swing"
+						}
+					}
+				]
+			},
+			"ctas": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"__TYPE__": "LinkContent",
+						"key": "57aba7c4-fdd6-444c-bc36-90a6d9d5f599",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://twitter.com",
+							"text": "am"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
