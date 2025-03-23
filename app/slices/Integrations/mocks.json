@@ -9,8 +9,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Handsome"
-						}
+							"text": "Integrations galore.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -20,7 +22,7 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Incididunt consectetur proident nostrud nulla cupidatat dolore do ",
+							"text": "The integrations your team needs to be productive at scale with no impact on your burn rate.",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -91,6 +93,19 @@
 									"__TYPE__": "FieldContent",
 									"type": "Text",
 									"value": "simple-icons:flydotio"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_id",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "simple-icons:digitalocean"
 								}
 							]
 						]

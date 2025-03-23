@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import type { Content } from "@prismicio/client";
+const prismic = usePrismic();
 
 // The array passed to `getSliceComponentProps` is purely optional.
 // Consider it as a visual hint for you when templating your slice.
-defineProps(
+const props = defineProps(
   getSliceComponentProps<Content.IntegrationsSlice>([
     "slice",
     "index",
@@ -11,27 +12,42 @@ defineProps(
     "context",
   ]),
 );
+
+const integrations = computed( () => {
+  return props.slice.primary.integrations
+  .map(item => item.icon_id)
+  .filter(icon => prismic.isFilled.keyText(icon))
+})
+
 </script>
 
 <template>
   <Bounded
+    class="relative overflow-hidden"
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    <PrismicRichText 
+  <img src="/assets/gradient.png"
+    class="absolute inset-0 h-full w-full object-cover">
+
+    <PrismicText 
     wrapper="h2"
-    class="text-balance text-center text-5xl md:text-7xl font-medium"
+    class="relative text-balance text-center text-5xl md:text-7xl font-medium  bg-gradient-to-b from-sky-50 to bg-sky-300 bg-clip-text text-transparent py-2"
     :field="slice.primary.heading" />
     <PrismicRichText 
     wrapper="div"
-    class="text-center text-gray-300 max-w-md mx-auto"
+    class="relative text-center mt-6 text-gray-300 max-w-md mx-auto"
     :field="slice.primary.body" />
-    <div  class="grid grid-cols-5 gap-4 mt-16 mx-auto">
-      <div 
-        v-for="item in slice.primary.integrations"
-        :key="item.id">
-        <Icon :name="item.icon_id" />
+    <div class="relative mt-20 flex flex-col md:flex-row items-center">
+      <div v-for="(integration, index) in integrations"
+        :key="integration">
+        <GlideLogoStylized v-if="index === Math.floor(integrations.length / 2)" />       
+        <div class="pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full border border-sky-50/30 bg-sky-50/25 p-4 text-3xl text-sky-100 opacity-40 md:text-3xl lg:text-5xl"
+          >
+            <Icon :name="integration" />
+          </div>
       </div>
     </div>
+
   </Bounded>
 </template>
