@@ -75,4 +75,10 @@ const integrations = computed( () => {
   background-size: 500% 500%;
 }
 
+@media(max-width: 767px) {
+  .signalLine {
+    --rotation: 0deg;
+  }
+}
+
 </style>
