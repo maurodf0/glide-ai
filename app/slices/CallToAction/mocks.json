@@ -9,8 +9,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Swing"
-						}
+							"text": "Effortless motion, built with precision",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -19,12 +21,13 @@
 				"type": "Link",
 				"value": [
 					{
-						"__TYPE__": "LinkContent",
 						"key": "57aba7c4-fdd6-444c-bc36-90a6d9d5f599",
+						"__TYPE__": "LinkContent",
 						"value": {
 							"__TYPE__": "ExternalLink",
-							"url": "http://twitter.com",
-							"text": "am"
+							"url": "https://github.com/maurodf0/",
+							"target": "_blank",
+							"text": "View GitHub"
 						}
 					}
 				]
