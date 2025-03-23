@@ -42,8 +42,7 @@ const integrations = computed( () => {
       <div v-for="(integration, index) in integrations"
         :key="integration">
         <GlideLogoStylized v-if="index === Math.floor(integrations.length / 2)" />       
-        <div class="pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full border border-sky-50/30 bg-sky-50/25 p-4 text-3xl text-sky-100 opacity-40 md:text-3xl lg:text-5xl"
-          >
+        <div class="flex aspect-square shrink-0 items-center justify-center rounded-full border border-sky-50/30 bg-sky-50/25 p-4 text-3xl text-sky-100 opacity-40 md:text-3xl lg:text-5xl">
             <Icon :name="integration" />
           </div>
       </div>
