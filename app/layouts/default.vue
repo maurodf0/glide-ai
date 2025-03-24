@@ -1,5 +1,8 @@
 <script setup lang="ts">
     const prismic = usePrismic();
+const lenis = useLenis(({ scroll, velocity, progress, direction }) => { ... })
+
+
 
     const { data: settings } = await useAsyncData( () => prismic.client.getSingle('settings'));
 
@@ -13,11 +16,11 @@
 
 
 <template>
-    <div>
+    <Lenis root>
         <AppHeader :settings="settings" />
         <slot />
         <AppFooter :settings="settings" />
-    </div>
+    </Lenis>
 </template>
 
 
