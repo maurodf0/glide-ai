@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxthub/core',
+    'nuxt3-lenis',
   ],
 
   prismic: {
