@@ -39,6 +39,7 @@ useSeoMeta({
       </header>
     <SliceZone
       wrapper="div"
+      class="mx-auto mt-12 md:mt-16"
       :slices="page?.data.slices ?? []"
       :components="components"
     />
