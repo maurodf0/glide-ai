@@ -18,6 +18,7 @@
     "@nuxt/eslint": "^0.7.5",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.3",
+    "@nuxthub/core": "^0.8.18",
     "@nuxtjs/prismic": "^4.1.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@slicemachine/adapter-nuxt": "^0.3.68",
@@ -27,7 +28,8 @@
     "nuxt": "^3.15.2",
     "postcss": "^8.5.3",
     "slice-machine-ui": "^2.13.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "wangler": "^0.0.7"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.14",
