@@ -24,11 +24,23 @@ useSeoMeta({
 
 <template>
   <main>
-    
+    <Bounded>
+      <header class="relative grid w-full place-items-center text-center">
+        <GlideGrid />
+        <h1 class="text-5xl font-medium text-balance md:text-7xl">
+          <PrismicText :field="page?.data.company" />
+          <RichTextGlideText class="block text-lg">Case Study</RichTextGlideText>
+        </h1>
+        <PrismicText 
+          class="max-w-xl mb-4 mt-8 text-lg text-gray-300"
+          :field="page?.data.description" 
+          wrapper="p"/>
+      </header>
     <SliceZone
-      wrapper="main"
+      wrapper="div"
       :slices="page?.data.slices ?? []"
       :components="components"
     />
+    </Bounded>
   </main>
 </template>
