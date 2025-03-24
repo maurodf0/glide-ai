@@ -1,6 +1,6 @@
 <script setup lang="ts">
     const prismic = usePrismic();
-const lenis = useLenis(({ scroll, velocity, progress, direction }) => { ... })
+    const lenis = useLenis(({ scroll, velocity, progress, direction }) => { });
 
 
 
