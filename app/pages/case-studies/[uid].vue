@@ -35,6 +35,7 @@ useSeoMeta({
           class="max-w-xl mb-4 mt-8 text-lg text-gray-300"
           :field="page?.data.description" 
           wrapper="p"/>
+          <PrismicImage v-if="prismic.isFilled.image(page?.data.cover)" :field="page?.data.cover" class="max-w-4xl w-full rounded-lg h-full object-cover" /> 
       </header>
     <SliceZone
       wrapper="div"
